@@ -1,0 +1,7 @@
+body {
+    height: 500px;
+    background-image: url(../images/web\ images.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
