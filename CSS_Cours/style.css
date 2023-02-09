@@ -1,0 +1,12 @@
+/*commit*/
+
+/*
+rule
+    selector {
+        property: value; declartion
+    }
+*/
+
+p {
+    color: blue;
+}
