@@ -11,3 +11,69 @@
 button {
     min-width: 150px;
 }
+
+
+.d-22 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    outline: 3px solid green;
+}
+
+.text {
+    text-align: center;
+    color: green;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 4;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    /* Arpic */
+    direction: rtl;
+
+    /* english */
+    direction: ltr;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.d-33 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    overflow: hidden;
+}
+
+.font {
+    font-family: serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul {
+    /* list-style: none; */
+    text-align: center;
+    list-style-position: inside;
+}
+
+table {
+    width: 250px;
+    height: 250px;
+    caption-side: bottom;
+}
+
+td {
+    vertical-align: middle;
+}
