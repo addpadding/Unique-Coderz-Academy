@@ -1,79 +1,235 @@
-.d-11 {
+body {
+    height: 5000px;
+    position: relative;
+}
+
+.test {
     width: 200px;
-
-    min-width: 100px;
-    max-width: 300px;
-
     height: 200px;
+    background-color: #f50;
+
+}
+
+#about {
+    color: #f00;
+}
+
+.test {
+    display: none;
+}
+
+.pp {
     background-color: #f00;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+span {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+li {
+    /* display: inline; */
+    display: inline-block;
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
 }
 
 button {
-    min-width: 150px;
+    background-color: #090;
+    width: 100px;
+}
+
+.first {
+    color: #fff;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.pos {
+    width: 100px;
+    height: 100px;
+    background-color: #f50;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.after_pos {
+    color: #f00;
+    font-size: 50px;
+}
+
+.position_absolute {
+    position: absolute;
+    top: 145px;
+    left: 317px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+}
+
+.position_absolute p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.position_relativee {
+    background-color: rgb(255, 0, 221);
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.position_relativee .child {
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.position_fixed {
+    background-color: rgb(85, 0, 255);
+    width: 100px;
+    height: 100px;
+    /* position: fixed; */
+    top: 250px;
+    left: 329px;
+}
+
+.hero {
+    height: 400px;
+    background-color: gray;
+    position: relative;
+}
+
+.hero .center {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
-.d-22 {
+.ex2 .test_1 {
     width: 100px;
     height: 100px;
-    background-color: blue;
+    background-color: #090;
+    /* position: absolute; */
+    z-index: 50;
+}
+
+.ex2 .test_2 {
+    width: 100px;
+    height: 100px;
+    background-color: #00f;
+    /* position: absolute; */
+    z-index: 100;
+}
+
+
+.float {
+    background-color: #777;
+    /* height: 250px; */
+}
+
+.float .item {
+    background-color: #f00;
+    width: 20%;
+    height: 200px;
     margin: 10px;
+    border: 2px solid #000;
+    float: left;
+    /* float: right; */
+
+    color: #fff;
+    opacity: 0.5;
+}
+
+.float .clear {
+    clear: both;
+}
+
+
+.opacity {
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+}
+
+.Nesting .item {
+    color: yellow;
+}
+
+.hover {
+    height: 300px;
+    width: 300px;
+    background-color: royalblue;
+    opacity: 0.5;
+}
+
+.hover:hover {
+    opacity: 1;
+    border: 10px solid #f00;
     padding: 10px;
-    border: 1px solid #000;
-    outline: 3px solid green;
 }
 
-.text {
-    text-align: center;
+.hover:active {
+    opacity: 1;
+    border: 5px solid #080;
+    padding: 15px;
+}
+
+
+.pseudo::first-line {
+    color: #080;
+    font-size: 20px;
+}
+
+.pseudo::first-letter {
+    color: #f00;
+    font-size: 40px;
+}
+
+.pseudo::after {
+    content: 'new';
+}
+
+.pseudo_after::after {
+    content: 'new';
+    color: #ff4d00;
+}
+
+.pseudo_after::before {
+    content: 'new';
+    color: #ff4d00;
+}
+
+.selectors h3 {
+    color: blue;
+}
+
+.selectors>h3 {
+    color: blue;
+}
+
+.selectors .pro h3 {
+    color: red;
+}
+
+.selectors~h3 {
     color: green;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    line-height: 4;
-    text-decoration: underline;
 }
 
-a {
-    text-decoration: none;
-}
-
-html {
-    /* Arpic */
-    direction: rtl;
-
-    /* english */
-    direction: ltr;
-}
-
-h1 {
-    text-transform: uppercase;
-}
-
-.d-33 {
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    overflow: hidden;
-}
-
-.font {
-    font-family: serif;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-}
-
-ul {
-    /* list-style: none; */
-    text-align: center;
-    list-style-position: inside;
-}
-
-table {
-    width: 250px;
-    height: 250px;
-    caption-side: bottom;
-}
-
-td {
-    vertical-align: middle;
+.selectors+h3 {
+    color: #0fcfff;
 }
