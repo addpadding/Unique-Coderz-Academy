@@ -27,25 +27,54 @@
         <div class="container">
             <div class="header_content">
 
-                <div class="logo">
-                    <img src="images/logo.webp" alt="logo" draggable="false">
+                <div class="header_logo">
+                    <img src="images/logo-alt.webp" alt="logo" draggable="false">
                 </div>
 
-                <ul class="nav">
-                    <li><a href="#home">Home</a></li>
+                <ul class="header_nav">
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#bout">Aout</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#prices">Prices</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="#blog">Blog</a></li>
+
+                    <li class="dropdown_li">
+                        <a href="#blog">Blog</a>
+
+                        <ul class="dropdown_menu">
+                            <li><a href="#">blog post</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+
+                <div class="clear"></div>
 
             </div>
         </div>
     </div>
 
+    <!-- home -->
+    <div class="home">
+        <div class="overlay">
+
+            <div class="home_content">
+
+                <h1 class="home_title">Lorem ipsum dolor sit.</h1>
+                <p class="home_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium autem fugiat
+                    tempora fugit accusamus amet nulla eius illo, neque perspiciatis earum modi architecto provident
+                    debitis
+                    sequi maiores iste sapiente blanditiis.
+                </p>
+                <button class="btn btn_started hover_opacity">get started</button>
+                <button class="btn btn_lern hover_opacity">lern more</button>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 
