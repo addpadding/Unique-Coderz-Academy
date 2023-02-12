@@ -21,6 +21,30 @@ body {
 =
 =
 =
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
 ===========================(global)*/
 
 .container {
@@ -70,6 +94,10 @@ a {
     padding: 120px 0;
 }
 
+.mg {
+    margin: 0 5%;
+}
+
 /*
 =
 =
@@ -79,7 +107,31 @@ a {
 =
 =
 =
-===========================(componants)*/
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(componants = 00)*/
 
 /* heading */
 .heading {
@@ -134,7 +186,31 @@ a {
 =
 =
 =
-===========================(header)*/
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(header 01)*/
 
 .header {
     position: fixed;
@@ -231,7 +307,31 @@ a {
 =
 =
 =
-===========================(Home)*/
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(Home 02)*/
 .home {
     height: 100vh;
     background-image: url(../images/background/background1.webp);
@@ -292,7 +392,31 @@ a {
 =
 =
 =
-===========================(about)*/
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(about 03)*/
 
 .about_container {
     overflow: hidden;
@@ -346,7 +470,31 @@ a {
 =
 =
 =
-===========================(portfolio)*/
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(portfolio = 04)*/
 .portfolio {
     background-color: #f9f9f9;
 }
@@ -438,3 +586,209 @@ a {
     opacity: 1;
     visibility: visible;
 }
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(offer = 05)*/
+.offer .container {
+    overflow: hidden;
+}
+
+.offer_item {
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #e8e8e8;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+}
+
+.offer_icon {
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    color: var(--main-color);
+}
+
+.offer_title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.offer_item:hover .offer_title {
+    color: #fff;
+}
+
+.offer_desc {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #999;
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(services = 06)*/
+.services {
+    background-color: #f9f9f9;
+}
+
+.services_item {
+    width: 50%;
+    float: left;
+}
+
+.services_item .heading {
+    text-align: left;
+}
+
+.services_item .heading .heading_span {
+    margin: 0 0 40px 0;
+}
+
+.services_desc {
+    padding-right: 20px;
+    color: #999;
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.services_list {
+    list-style: none;
+}
+
+.services_list li {
+    margin-bottom: 00px;
+    color: #999;
+}
+
+.services_list li i {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+}
+
+.services_image img {
+    width: 100%;
+}
+
+.services_bollets {
+    text-align: center;
+}
+
+.services_bollets li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+
+.services_bollets li.active,
+.services_bollets li:hover {
+    background-color: var(--main-color);
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(aaa = 00)*/
