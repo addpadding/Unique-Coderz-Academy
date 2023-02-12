@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
+    height: 7000px;
 }
 
 /*
@@ -154,27 +155,42 @@ a {
 }
 
 
-/* left_effect */
-.left_effect {
+/* effect */
+.left_effect,
+.top_effect {
     position: relative;
 }
 
-.left_effect::after {
+.left_effect::after,
+.top_effect::after {
     content: '';
     position: absolute;
     width: 100%;
-    width: 0;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #333;
     z-index: -1;
-    transition: width 0.5s;
+    transition: 0.3s;
 }
 
+.left_effect::after {
+    width: 0;
+}
+
+.top_effect::after {
+    height: 0;
+}
+
+/* hover */
 .left_effect:hover::after {
     width: 100%;
+}
+
+/* hover */
+.top_effect:hover::after {
+    height: 100%;
 }
 
 /*
@@ -756,6 +772,366 @@ a {
 .services_bollets li.active,
 .services_bollets li:hover {
     background-color: var(--main-color);
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(number = 07)*/
+.number {
+    position: relative;
+    height: 300px;
+    background-image: url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.number_item {
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.number_box {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.number_icon {
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.number_title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.number_text {
+    color: #fff;
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(prices = 08)*/
+
+.prices_plan {
+    overflow: hidden;
+}
+
+.prices_item {
+    width: 30%;
+    float: left;
+    padding: 40px 15px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+.prices_text {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #999;
+    transition: 0.3s;
+}
+
+.prices_item:hover .prices_text {
+    color: var(--main-color);
+}
+
+.prices_permonth {
+    width: 130px;
+    height: 130px;
+    padding: 20px 0;
+    margin: 20px auto;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.prices_item:hover .prices_permonth {
+    color: #fff;
+}
+
+
+.prices_dollar {
+    font-size: 50px;
+}
+
+.prices_month {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.prices_list {
+    list-style: none;
+}
+
+.prices_list li {
+    color: #999;
+    line-height: 1.8;
+}
+
+.prices_button {
+    background: none;
+    border: 0;
+    display: block;
+    width: 140px;
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    margin: 15px auto 0 auto;
+    color: var(--main-color);
+}
+
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(testimonial = 09)*/
+.testimonial {
+    position: relative;
+    background-image: url(../images/background/background3.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.testimonial .container {
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.testimonial_item {
+    width: 50%;
+    float: left;
+    color: #fff;
+}
+
+.testimonial_player {
+    padding: 10px 2px 40px 100px;
+    position: relative;
+}
+
+.testimonial_player img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.testimonial_h3 {
+    margin: 5px 0;
+}
+
+.testimonial_span {
+    color: var(--main-color);
+}
+
+.testimonial_desc {
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+===========================(team = 10)*/
+.team_content {
+    overflow: hidden;
+}
+
+.team_item {
+    width: 30%;
+    float: left;
+    background-color: #e8e8e8;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.team_item.top_effect {
+    z-index: 1;
+}
+
+.team_image {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.team_image img {
+    width: 100%;
+}
+
+.team_overlay {
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.team_item:hover .team_overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team_overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--main-color);
+    color: #fff;
+    margin-left: auto;
+}
+
+.team_title {
+    color: #222;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.team_item:hover .team_title {
+    color: #fff;
+}
+
+.team_text {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.team_item:hover .team_text {
+    color: var(--main-color);
 }
 
 /*
