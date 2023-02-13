@@ -1,0 +1,149 @@
+.div-01 {
+    width: 100px;
+    height: 100px;
+    background-color: #080;
+    margin: 50px auto;
+    border-radius: 10px 50px 30px 20px;
+}
+
+.div-02 {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../images/web\ images.avif);
+    background-size: cover;
+    background-size: contain;
+}
+
+.div-03 {
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #f50;
+    padding: 20px;
+    border: 5px dotted #080;
+    background-image: url(../images/web\ images.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+    background-origin: border-box;
+    background-origin: content-box;
+
+    background-clip: content-box;
+}
+
+.div-04 {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: #f50;
+
+    box-shadow: 10px 30px 20px 10px #000,
+        10px 30px 20px 10px #000;
+}
+
+.div-05 {
+    text-shadow: 2px 5px 2px #f50;
+}
+
+.div-06 {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: #000;
+
+    background: -webkit-linear-gradient(top, yellow, green);
+    background: -webkit-linear-gradient(top, yellow 50%, green 50%);
+    background: -webkit-linear-gradient(left, yellow, green);
+    background: -webkit-linear-gradient(top left, yellow, green);
+
+    background:
+        -webkit-linear-gradient(top left,
+            yellow,
+            green,
+            #000,
+            #f50);
+}
+
+.div-07 {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: #000;
+
+    background: -webkit-radial-gradient(20% 20%, circle, yellow, green);
+    background: -webkit-radial-gradient(closest-corner, yellow, green);
+
+    background: -webkit-radial-gradient(20% 50%, closest-corner,
+            yellow, green);
+
+    background: -webkit-radial-gradient(20% 10%, farthest-corner,
+            yellow,
+            green,
+            gray);
+}
+
+
+
+
+
+
+
+
+
+
+.div-08 {
+    width: 100px;
+    height: 200px;
+    border: 1px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.div-09 {
+    width: 100px;
+    height: 200px;
+    border: 1px solid #000;
+    word-wrap: break-word;
+    word-wrap: normal;
+    word-break: break-all;
+}
+
+.div-10 {
+    width: 100px;
+    height: 200px;
+    border: 1px solid #000;
+    word-break: break-all;
+    word-break: keep-all;
+}
+
+.div-11 {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.div-12 {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+
+    transform: translateX(100px) translateY(100px);
+}
+
+.div-13 {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+
+    margin: 100px auto;
+
+    transform: rotate(20deg);
+}
