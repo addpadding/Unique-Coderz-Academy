@@ -1,0 +1,68 @@
+.item {
+    font-size: 18px;
+    text-align: center;
+    line-height: 100px;
+}
+
+body {
+    background-color: #aaa;
+    margin: 0;
+}
+
+
+.content {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+
+}
+
+/* ============================================== */
+
+.flex_container {
+    background-color: #fff;
+    border: 1px solid magenta;
+
+    display: flex;
+}
+
+.item {
+    color: #fff;
+
+
+    height: 100px;
+    min-width: 120px;
+    /* width: 200px; */
+
+
+
+    flex: 0 0 100px;
+}
+
+
+
+/* ============================================== */
+
+.div-11 {
+    background-color: #080;
+
+    /* ========= */
+    order: 7;
+    /* ========= */
+}
+
+.div-22 {
+    background-color: #d3d0d0;
+
+    /* ========= */
+    order: 5;
+    /* ========= */
+}
+
+.div-33 {
+    background-color: #f00;
+
+    /* ========= */
+    order: 3;
+    /* ========= */
+}

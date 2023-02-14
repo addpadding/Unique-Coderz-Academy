@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 960px;
+    border: 1px solid #000;
+    margin: 100px auto;
+}
+
+header,
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    color: #fff;
+}
+
+.content {
+    background-color: #080;
+    flex-grow: 1;
+    order: 2;
+}
+
+.sidebar {
+    background-color: #00f;
+    /* flex-grow: 1; */
+    order: 1;
+}
+
+.links {
+    background-color: #f00;
+    /* flex-grow: 1; */
+    order: 3;
+}
