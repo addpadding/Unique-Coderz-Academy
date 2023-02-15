@@ -1,0 +1,435 @@
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (globals) ================== */
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  height: 5000px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sections_padding {
+  padding: 40px 0;
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (variables) ================== */
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (category) ================== */
+.heading {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.heading:hover .line {
+  width: 150px;
+}
+.heading .title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.heading .line {
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: auto;
+  background-color: #7b5244;
+  transition: 0.3s;
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (header) ================== */
+header {
+  padding: 30px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container img.logo {
+  flex: 1;
+  max-width: 170px;
+}
+header .container .navbar {
+  flex: 3;
+  text-align: center;
+}
+header .container .navbar .ul_nav li {
+  display: inline-block;
+  color: #333;
+}
+header .container .navbar .ul_nav li .link_item {
+  display: block;
+  position: relative;
+  padding: 10px 24px;
+  color: #333;
+  font-weight: bold;
+}
+header .container .navbar .ul_nav li .link_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 100%;
+  border-width: 0 2px;
+  border-color: #7b5244;
+  border-style: solid;
+  transition: 0.3s;
+  transform: scale3d(1, 0, 1);
+}
+header .container .navbar .ul_nav li .link_item:hover:before {
+  transform: scale3d(1, 1, 1);
+}
+header .container .navbar .ul_nav li .link_item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 91%;
+  border-width: 2px 0;
+  border-color: #7b5244;
+  border-style: solid;
+  transition: 0.3s;
+  transform-origin: left;
+  transform: scale3d(0, 1, 1);
+}
+header .container .navbar .ul_nav li .link_item:hover:after {
+  transition-delay: 0.2s;
+  transform: scale3d(1, 1, 1);
+}
+header .container .navbar .ul_nav .li_drop_down {
+  position: relative;
+}
+header .container .navbar .ul_nav .li_drop_down:hover .dropdown_menu {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+header .container .navbar .ul_nav .li_drop_down .dropdown_menu {
+  position: absolute;
+  width: 400px;
+  margin-top: 5px;
+  padding: 15px;
+  background-color: #FFF;
+  border: 2px solid #7b5244;
+  transition: 0.3s;
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+  transform-origin: left;
+}
+header .container .navbar .ul_nav .li_drop_down .dropdown_menu .ul_drop {
+  display: table-cell;
+  text-align: left;
+}
+header .container .navbar .ul_nav .li_drop_down .dropdown_menu .ul_drop li {
+  line-height: 1.7;
+}
+header .container .navbar .ul_nav .li_drop_down .dropdown_menu .ul_drop li:first-child a {
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #7b5244;
+}
+header .container .navbar .ul_nav .li_drop_down .dropdown_menu .ul_drop li a {
+  color: #333;
+}
+header .container .login {
+  flex: 1;
+  text-align: right;
+}
+header .container .login .ul_login li {
+  display: inline-block;
+  color: #333;
+  padding: 10px;
+}
+header .container .login .ul_login li:last-child i {
+  position: relative;
+  margin-right: 10px;
+}
+header .container .login .ul_login li:last-child i::after {
+  content: "0";
+  position: absolute;
+  bottom: 0;
+  right: -11px;
+  padding: 4px;
+  color: #fff;
+  background-color: #7b5244;
+  font-size: 13px;
+  border-radius: 50%;
+}
+header .container .login .ul_login li i {
+  font-size: 32px;
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (home) ================== */
+.home .container img {
+  width: 100%;
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (category) ================== */
+.category .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.category .container .item {
+  position: relative;
+}
+.category .container .item img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.category .container .item h4 {
+  color: gray;
+  font-weight: normal;
+}
+.category .container .item i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #7b5244;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (discount) ================== */
+.discount {
+  margin: 30px 0;
+}
+.discount .container {
+  display: flex;
+}
+.discount .container .content {
+  position: relative;
+  flex: 2;
+  padding: 20px;
+  background-color: #f7f3ef;
+}
+.discount .container .content .top {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+.discount .container .content .top i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #7b5244;
+  font-size: 50px;
+}
+.discount .container .content p {
+  line-height: 1.7;
+}
+.discount .container .content .bolletes {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+.discount .container .content .bolletes span {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #7b5244;
+  margin-left: 10px;
+}
+.discount .container .img-01 {
+  flex: 1;
+  height: 300px;
+  margin: 0 20px;
+  background-image: url(../images/cms-banner-1.jpg);
+  background-size: cover;
+}
+.discount .container .img-02 {
+  flex: 1;
+  height: 300px;
+  background-image: url(../images/cms-banner-2.jpg);
+  background-size: cover;
+}
+.discount .container .images {
+  position: relative;
+  transition: 0.3s;
+}
+.discount .container .images:hover {
+  transform: scale(1.1);
+}
+.discount .container .images .info {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.discount .container .images .info h3 {
+  font-weight: normal;
+  color: #7b5244;
+}
+.discount .container .images .info h2 {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

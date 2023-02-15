@@ -1,0 +1,259 @@
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (header) ================== */
+// 001.==================
+header {
+    // ==================
+    padding: 30px 0;
+    // ==================
+
+    // 002.==================
+    .container {
+        // ==================
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // ==================
+
+        // 003.==================
+        img.logo {
+            // ==================
+            flex: 1;
+            max-width: 170px;
+            // ==================
+        }
+
+        // 003.==================
+        .navbar {
+            // ==================
+            flex: 3;
+            text-align: center;
+            // ==================
+
+            // 004.==================
+            .ul_nav {
+                // ==================
+                // ==================
+
+                // 005.==================
+                li {
+                    // ==================
+                    display: inline-block;
+                    color: $sub-color;
+                    // ==================
+
+                    // 006.==================
+                    .link_item {
+                        // ==================
+                        display: block;
+                        position: relative;
+                        // ==================
+                        padding: 10px 24px;
+                        color: $sub-color;
+                        // ==================
+                        font-weight: bold;
+                        // ==================
+
+                        //before ==================
+                        &::before {
+                            // ==================
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            // ==================
+                            width: 99%;
+                            height: 100%;
+                            // ==================
+                            border-width: 0 2px;
+                            border-color: $main-color;
+                            border-style: solid;
+                            // ==================
+                            transition: 0.3s;
+                            transform: scale3d(1, 0, 1);
+                            // ==================
+                        }
+
+                        //hover ==================
+                        &:hover:before {
+                            transform: scale3d(1, 1, 1);
+                        }
+
+                        //after ==================
+                        &::after {
+                            // ==================
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            // ==================
+                            width: 100%;
+                            height: 91%;
+                            // ==================
+                            border-width: 2px 0;
+                            border-color: $main-color;
+                            border-style: solid;
+                            // ==================
+                            transition: 0.3s;
+                            transform-origin: left;
+                            transform: scale3d(0, 1, 1);
+                            // ==================
+                        }
+
+                        //hover ==================
+                        &:hover:after {
+                            transition-delay: 0.2s;
+                            transform: scale3d(1, 1, 1);
+                        }
+
+
+
+                    }
+
+
+
+                }
+
+                // 005.==================
+                .li_drop_down {
+                    // ==================
+                    position: relative;
+                    // ==================
+
+                    // ==================
+                    &:hover .dropdown_menu {
+                        transform: scale(1);
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+
+                    // 006.==================
+                    .dropdown_menu {
+                        // ==================
+                        position: absolute;
+                        // ==================
+                        width: 400px;
+                        margin-top: 5px;
+                        padding: 15px;
+                        // ==================
+                        background-color: #FFF;
+                        // ==================
+                        border: 2px solid $main-color;
+                        // ==================
+                        transition: 0.3s;
+                        transform: scale(0);
+                        visibility: hidden;
+                        opacity: 0;
+                        transform-origin: left;
+                        // ==================
+
+                        // 007.==================
+                        .ul_drop {
+                            // ==================
+                            display: table-cell;
+                            // ==================
+                            text-align: left;
+                            // ==================
+
+                            // 002.==================
+                            li {
+                                // ==================
+                                line-height: 1.7;
+                                // ==================
+
+                                //* ==================
+                                &:first-child a {
+                                    // ==================
+                                    display: block;
+                                    // ==================
+                                    margin-bottom: 10px;
+                                    // ==================
+                                    border-bottom: 1px dotted $main-color;
+                                    // ==================
+                                }
+
+                                // 003.==================
+                                a {
+                                    // ==================
+                                    color: $sub-color;
+                                    // ==================
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // 003.==================
+        .login {
+            // ==================
+            flex: 1;
+            text-align: right;
+            // ==================
+
+            // 004.==================
+            .ul_login {
+                // ==================
+
+                // 005.==================
+                li {
+                    // ==================
+                    display: inline-block;
+                    color: $sub-color;
+                    padding: 10px;
+                    // ==================
+
+                    // *==================
+                    &:last-child i {
+                        position: relative;
+                        margin-right: 10px;
+                    }
+
+                    //after==================
+                    &:last-child i::after {
+                        content: '0';
+                        position: absolute;
+                        bottom: 0;
+                        right: -11px;
+                        // ==================
+                        padding: 4px;
+                        // ==================
+                        color: #fff;
+                        background-color: $main-color;
+                        // ==================
+                        font-size: 13px;
+                        border-radius: 50%;
+                    }
+
+                    // 006.==================
+                    i {
+                        // ==================
+                        font-size: 32px;
+                        // ==================
+                    }
+                }
+            }
+        }
+    }
+}
