@@ -1,0 +1,12 @@
+div {
+    display: table;
+    width: 100px;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+}
+
+p {
+    display: table-cell;
+    vertical-align: middle;
+}
